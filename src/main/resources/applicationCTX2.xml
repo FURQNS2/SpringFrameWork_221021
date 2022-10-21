@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="family" class="com.sycompany.test.Family">
+		<property name="father" value="길동아빠"></property>
+		<property name="mother" value="길동엄마"></property>
+		<property name="sister" value="길동누나"></property>
+		<property name="brother" value="길동동생"></property>
+	</bean>
+	
+	<bean id="student2" class="com.sycompany.test.Student">
+		<constructor-arg value="김유신"></constructor-arg>
+		<constructor-arg value="23"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>영화</value>
+				<value>체육</value>
+				<value>야구</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg value="176"></constructor-arg>
+		<constructor-arg value="83"></constructor-arg>
+	</bean>
+
+</beans>
