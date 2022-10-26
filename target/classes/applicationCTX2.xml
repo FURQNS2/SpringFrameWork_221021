@@ -4,8 +4,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="family" class="com.sycompany.test.Family">
-		<property name="father" value="길동아빠"></property>
+	<bean id="family" class="com.sycompany.test.Family">  <!-- 객체명 -->
+		<property name="father" value="길동아빠"></property> <!-- 멤버변수에 값 넣기 -->
 		<property name="mother" value="길동엄마"></property>
 		<property name="sister" value="길동누나"></property>
 		<property name="brother" value="길동동생"></property>

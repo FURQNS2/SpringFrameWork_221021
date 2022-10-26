@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="student1" class="com.sycompany.test.Student">  <!--  초기값 설정 -->
-		<constructor-arg value="홍길동"></constructor-arg>
+		<constructor-arg value="홍길동"></constructor-arg> <!-- 값 입력 -->
 		<constructor-arg value="30"></constructor-arg>
 		<constructor-arg>
 			<list>

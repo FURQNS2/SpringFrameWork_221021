@@ -4,12 +4,12 @@ public class StudentInfo {
 
 	private Student student;
 
-	public StudentInfo() {
+	public StudentInfo() {   //빈 생성자
 		super();
 	}
 
 	
-	public StudentInfo(Student student) {
+	public StudentInfo(Student student) {  // 매개변수 있는 생성자
 		super();
 		this.student = student;
 	}

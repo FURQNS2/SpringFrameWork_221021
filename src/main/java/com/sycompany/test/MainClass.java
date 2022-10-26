@@ -10,9 +10,10 @@ public class MainClass {
 		String configLocation1 = "classpath:applicationCTX1.xml";  //변수 선언, xml불러오기
 		String configLocation2 = "classpath:applicationCTX2.xml";  // 변수 선언, xml불러오기
 		
-		AbstractApplicationContext ctx = new GenericXmlApplicationContext(configLocation1,  configLocation2); //xml을 담아둔 알약(제네릭)을 불러들임
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext(configLocation1,  configLocation2); //xml을 담아둔 제네릭(클래스로 값을 담아둔 것을 일컫음)을 불러들임
 		
-		Student student1 = ctx.getBean("student1", Student.class);
+		Student student1 = ctx.getBean("student1", Student.class);   // bean의 객체불러들임  getBean(객체명, 객체의 사용 클래스)
+		
 		System.out.println(student1.getName());  //홍길동
 		System.out.println(student1.getAge());  // 30
 		System.out.println(student1.getHobbys());   // [운동, 노래, 게임]
